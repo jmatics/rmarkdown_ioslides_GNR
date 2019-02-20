@@ -1,0 +1,84 @@
+---
+author: "JW"
+title: Test Ioslides
+output: 
+  ioslides_presentation:
+  css: css_ioslides.css
+#logo: "./images/uni_kassel.jpg"
+self_contained: no
+incremental: true
+transition: rotate
+---
+
+  
+## Goals 
+  
+### You will learn:
+  
+- Tools for finding bugs & diagnosing errors in Shiny applications
+- Little-known ways to look under the covers 
+- How to debug problems in deployed apps
+- Cheat code for IDE JavaScript debug tools
+
+## Outline
+
+### We'll cover three main areas:
+
+- Debugging
+- Tracing 
+- Errors
+
+## Breakpoints
+
+*Breakpoint (armed)*
+  
+## Breakpoints
+  
+
+*Stepping after execution*
+  
+## Breakpoints {.build}
+  
+### Pros
+  
+  - Doesn't change code
+- Can inspect local values/stack
+- Can step through following code
+
+### Cons
+
+- Only works inside `shinyServer`
+- Can't tell you why something isn't happening
+- Interrupts program flow; not conditional
+
+## browser()
+
+
+## Conditional breakpoint
+
+
+
+## browser() {.build}
+
+### Pros
+
+- Similar advantages to breakpoints
+- Valid anywhere an R expression is valid
+- Can be made conditional
+
+### Cons
+
+- Changes your code!
+- Interrupts program flow
+- Can't tell you why something isn't happening
+
+# Tracing
+
+<div class="notes">
+In many cases it's difficult to diagnose a problem by halting execution, and instead you need to observe the system as it runs. This is particularly true of Shiny applications since the system doesn't run once through linearly as an R script does! We'll look at a number of ways to peek into the system while it's running.
+</div>
+
+## Showcase Mode {.build}
+
+
+
